@@ -164,7 +164,10 @@ export default function HomePage() {
             {/* WAVE Program Card */}
             <div className="bg-navy rounded-2xl p-8 text-white flex flex-col">
               <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center mb-5">
-                <img src="/images/logo.png" alt="" style={{ height: '28px', width: 'auto' }} />
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                  <path d="M2 10c3.33-4 6.67-4 10 0s6.67 4 10 0" stroke="#4A9FD4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M2 17c3.33-4 6.67-4 10 0s6.67 4 10 0" stroke="#4A9FD4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.6" />
+                </svg>
               </div>
               <h3 className="text-2xl font-extrabold text-white mb-3">The WAVE Program</h3>
               <p className="text-gray-300 leading-relaxed mb-5">
@@ -197,18 +200,9 @@ export default function HomePage() {
             {/* Lake Responsibly Card */}
             <div className="bg-navy rounded-2xl p-8 text-white flex flex-col">
               <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center mb-5">
-                <svg
-                  className="w-7 h-7"
-                  style={{ color: '#4A9FD4' }}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  <path d="M9 12l2 2 4-4" />
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#4A9FD4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M9 12l2 2 4-4" stroke="#4A9FD4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <h3 className="text-2xl font-extrabold text-white mb-3">Lake Responsibly</h3>
