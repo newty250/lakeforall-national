@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getStoredNews } from '@/lib/news';
 
-export const revalidate = 3600;
+export const revalidate = 604800;
 
 export async function GET() {
   try {
