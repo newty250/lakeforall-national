@@ -1,0 +1,31 @@
+Build a complete Next.js website for "Lake For All" — a national grassroots movement advocating for public lake access and preservation of all watersports on public lakes across the United States. This is the national movement website, separate from individual chapter sites.
+
+The site should match the visual identity of the Lake Anna chapter site: navy blue (#1B3A6B), sky blue (#4A9FD4), white, Tailwind CSS, same clean Surfrider-inspired layout.
+
+Build the following pages:
+
+1. HOME — Bold hero with mission statement "Every Lake. Every Sport. Every American." Key statistics section showing US lake economic impact (number of lake visitors annually, economic impact on local communities, jobs supported by lake recreation). WAVE program section adapted for national audience. Latest national news preview (3 cards). Chapters preview section. Dual CTA: Join the Movement and Donate.
+
+2. WHY LAKES MATTER — Data-driven advocacy page with statistics on: number of Americans visiting lakes annually, economic impact of lake recreation on local economies, jobs dependent on lake access, what happens to local economies when lake access is restricted, case studies of restrictions hurting local businesses. Include cited sources like US Army Corps of Engineers, US Fish and Wildlife Service, Outdoor Recreation Roundtable.
+
+3. CHAPTERS — Interactive directory of Lake For All chapters across the US. Currently one chapter: Lake Anna, Virginia (link to lakeanna4all.vercel.app). Chapter cards showing lake name, location, brief description, and link. Below the directory: "Start a Chapter" section with a form collecting lake name, location, contact name, email address, and why they want to start a chapter. Form submissions should send to a designated email.
+
+4. NEWS & UPDATES — AI-curated national news feed about public lake access rights, federal waterway legislation, Corps of Engineers policy changes, state-by-state regulatory updates, wake surfing regulation debates, economic impact of lake recreation nationwide. Uses Anthropic API with web search tool, claude-sonnet-4-6, searches daily via cron job.
+
+5. SHOP — Merchandise store placeholder with Lake For All branded products (t-shirts, hats, stickers). "Coming Soon" for individual chapter product sections. Note that proceeds support lake access advocacy. Printful integration placeholder with "Coming Soon" waitlist CTA.
+
+6. DONATE — Dedicated donation page explaining what donations fund. Donation tiers: $10 Supporter, $25 Advocate, $50 Champion, $100 Guardian, custom amount. Monthly recurring option. Open Collective integration placeholder with direct link option. Clear messaging that Lake For All is a grassroots movement and donations fund advocacy, education, and chapter support.
+
+7. ABOUT — Origin story starting at Lake Anna Virginia in 2024. The vision for a national movement with chapters at every public lake. The chapter model explained. How to get involved. Leadership section placeholder.
+
+NAVIGATION: Logo placeholder (text "Lake For All" with wave icon), links to all pages, JOIN THE MOVEMENT button in sky blue.
+
+FOOTER: Mission statement, chapter directory link, social links placeholders, donation link, contact email placeholder.
+
+AI NEWS AGENT: Search queries focused on: federal waterway legislation, Corps of Engineers lake access policies, national lake recreation economic impact, state-by-state wake surfing and watercraft regulations, public lake access rights nationwide, lake recreation advocacy organizations.
+
+CHAPTER MAP: On the Chapters page, include a visual map of the US with a pin at Lake Anna Virginia (38.0293° N, 77.8133° W) as the first chapter. Map should be expandable as chapters are added.
+
+Include: package.json with all dependencies, .env.example with ANTHROPIC_API_KEY, vercel.json with daily cron, README with setup instructions, .gitignore, tailwind.config.js in CommonJS format (not TypeScript ESM to avoid compilation issues), postcss.config.js.
+
+Use /public/images/ for image placeholders. Configure for Vercel deployment.

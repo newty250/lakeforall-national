@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #1B3A6B;
+    --sky-blue: #4A9FD4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-sky-blue text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-blue-dark transition-colors duration-200 inline-block;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-navy font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-200 inline-block border border-white;
+  }
+
+  .btn-outline {
+    @apply border-2 border-sky-blue text-sky-blue font-semibold px-6 py-3 rounded-lg hover:bg-sky-blue hover:text-white transition-colors duration-200 inline-block;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-navy mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 mb-8 max-w-2xl;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .wave-bg {
+    background: linear-gradient(135deg, #1B3A6B 0%, #254d8f 50%, #4A9FD4 100%);
+  }
+
+  .stat-card {
+    @apply bg-white bg-opacity-10 rounded-xl p-6 text-center backdrop-blur-sm;
+  }
+}
+
+@layer utilities {
+  .text-navy {
+    color: #1B3A6B;
+  }
+
+  .bg-navy {
+    background-color: #1B3A6B;
+  }
+
+  .text-sky-blue {
+    color: #4A9FD4;
+  }
+
+  .bg-sky-blue {
+    background-color: #4A9FD4;
+  }
+
+  .border-sky-blue {
+    border-color: #4A9FD4;
+  }
+}
+
+/* Wave animation */
+@keyframes wave {
+  0% { transform: translateX(0) translateZ(0) scaleY(1); }
+  50% { transform: translateX(-25%) translateZ(0) scaleY(0.55); }
+  100% { transform: translateX(-50%) translateZ(0) scaleY(1); }
+}
+
+.wave-animate {
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.wave-animate-slow {
+  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+}
