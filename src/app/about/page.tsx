@@ -247,10 +247,7 @@ export default function AboutPage() {
       {/* Vision */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <img src="/images/logo.png" alt="Lake For All" style={{ height: '50px', width: 'auto' }} />
-            <span className="text-navy font-bold text-xl">Lake For All</span>
-          </div>
+          <img src="/images/logo.png" alt="Lake For All" style={{ height: '32px', width: 'auto' }} className="mx-auto mb-4 block" />
           <h2 className="section-title">The Vision</h2>
           <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto mb-6">
             A Lake For All chapter at every public lake in America — a nationwide network of

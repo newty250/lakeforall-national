@@ -4,7 +4,6 @@ import path from 'path';
 import Link from 'next/link';
 import NewsCard from '@/components/NewsCard';
 import ChapterCard from '@/components/ChapterCard';
-import WaveIcon from '@/components/WaveIcon';
 import { MOCK_NEWS } from '@/lib/news';
 import { CHAPTERS } from '@/lib/chapters';
 
@@ -165,7 +164,7 @@ export default function HomePage() {
             {/* WAVE Program Card */}
             <div className="bg-navy rounded-2xl p-8 text-white flex flex-col">
               <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center mb-5">
-                <WaveIcon size={28} className="text-sky-blue" />
+                <img src="/images/logo.png" alt="" style={{ height: '28px', width: 'auto' }} />
               </div>
               <h3 className="text-2xl font-extrabold text-white mb-3">The WAVE Program</h3>
               <p className="text-gray-300 leading-relaxed mb-5">

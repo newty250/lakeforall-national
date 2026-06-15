@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import WaveIcon from '@/components/WaveIcon';
 import RequestMaterialsForm from '@/components/RequestMaterialsForm';
 
 export const metadata: Metadata = {
@@ -133,7 +132,7 @@ export default function EducationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center">
-              <WaveIcon size={28} className="text-sky-blue" />
+              <img src="/images/logo.png" alt="" style={{ height: '28px', width: 'auto' }} />
             </div>
             <span className="text-sky-blue font-semibold uppercase tracking-wide text-sm">
               Program 1

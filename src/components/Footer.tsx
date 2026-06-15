@@ -33,6 +33,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { href: '/why-lakes-matter', label: 'Why Lakes Matter' },
+                { href: '/education', label: 'Education' },
                 { href: '/chapters', label: 'Find a Chapter' },
                 { href: '/chapters#start', label: 'Start a Chapter' },
                 { href: '/news', label: 'News & Updates' },
@@ -130,15 +131,29 @@ export default function Footer() {
               </a>
             </div>
 
-            <p className="mt-6 text-gray-400 text-xs">
-              Contact:{' '}
-              <a
-                href="mailto:contact@lakeforall.org"
-                className="text-sky-blue hover:underline"
-              >
-                contact@lakeforall.org
-              </a>
-            </p>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <a href="#" className="text-gray-300 hover:text-sky-blue text-sm transition-colors">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@lakeforall.org"
+                  className="text-gray-300 hover:text-sky-blue text-sm transition-colors"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:media@lakeforall.org"
+                  className="text-gray-300 hover:text-sky-blue text-sm transition-colors"
+                >
+                  Media Inquiries
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
