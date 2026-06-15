@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { resend, FROM_ADDRESS, TEAM_EMAIL } from '@/lib/resend';
+import { resend, FROM_ADDRESS, TEAM_EMAIL, CHAPTERS_EMAIL } from '@/lib/resend';
 
 interface ChapterPayload {
   lakeName: string;
@@ -78,6 +78,7 @@ export async function POST(request: NextRequest) {
       resend.emails.send({
         from: FROM_ADDRESS,
         to: TEAM_EMAIL,
+        cc: [CHAPTERS_EMAIL],
         subject: `New Chapter Application — ${data.lakeName}`,
         html: teamHtml(data),
       }),
