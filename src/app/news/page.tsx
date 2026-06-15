@@ -5,7 +5,7 @@ import { getStoredNews } from '@/lib/news';
 export const metadata: Metadata = {
   title: 'News & Updates',
   description:
-    'AI-curated national news on lake access rights, federal waterway legislation, and watersports regulations across the US.',
+    'AI-curated national news on public lake access rights, water activity regulations, privatization of public waters, and lake access legislation across the US.',
 };
 
 export const revalidate = 3600;
@@ -46,7 +46,8 @@ export default async function NewsPage() {
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed mb-4">
               Daily AI-curated news on public lake access rights, federal waterway legislation,
-              Corps of Engineers policy changes, and watersports regulation debates across the US.
+              Corps of Engineers policy changes, water activity regulations, and the fight against
+              privatization of public waters across the US.
             </p>
             {lastUpdated && (
               <p className="text-sm text-gray-400">
@@ -101,9 +102,11 @@ export default async function NewsPage() {
             {[
               { icon: '⚖️', title: 'Federal Waterway Legislation', desc: 'Congressional bills affecting navigable waterways and public lake access rights nationwide.' },
               { icon: '🏛️', title: 'Corps of Engineers Policies', desc: 'Policy changes at the US Army Corps of Engineers\' 400+ managed lakes and reservoirs.' },
-              { icon: '🏄', title: 'Watersports Regulation Debates', desc: 'State-by-state debates over wake surfing, personal watercraft, and motorized recreation restrictions.' },
+              { icon: '🚫', title: 'Privatization of Public Waters', desc: 'Lakefront property owners and HOAs using buoys, no-wake zones, and regulatory processes to restrict public water access for private benefit.' },
+              { icon: '🏄', title: 'Water Activity Regulations', desc: 'State-by-state debates over wake surfing, fishing restrictions, personal watercraft, swimming access, and all forms of lake recreation.' },
               { icon: '💰', title: 'Economic Impact Studies', desc: 'Research on the economic value of lake recreation and the cost of access restrictions to local communities.' },
-              { icon: '📢', title: 'Advocacy & Legal Actions', desc: 'Lawsuits, public comment campaigns, and advocacy efforts protecting lake access rights.' },
+              { icon: '📢', title: 'Advocacy & Legal Actions', desc: 'Lawsuits, public comment campaigns, and advocacy efforts protecting lake access rights for all users.' },
+              { icon: '🎣', title: 'Fishing & Non-Motorized Access', desc: 'Restrictions on fishing, kayaking, paddleboarding, and swimming in public lakes — and the fights to keep those activities open.' },
               { icon: '🗺️', title: 'State Regulatory Updates', desc: 'New rules, proposed regulations, and legislative changes affecting lake access state by state.' },
             ].map((topic) => (
               <div key={topic.title} className="card p-5">

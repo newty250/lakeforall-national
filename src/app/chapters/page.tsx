@@ -41,6 +41,41 @@ export default function ChaptersPage() {
         </div>
       </section>
 
+      {/* How to Join */}
+      <section id="join" className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h2 className="section-title">How to Join Lake For All</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Lake For All is a chapter-based movement. Membership and local advocacy happen at the
+              chapter level — where the real work gets done.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-8">
+              Find your lake below and connect with your local chapter. If your lake doesn&apos;t
+              have a chapter yet, we&apos;d love your help starting one.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <a href="#find" className="btn-primary text-center">
+                Find My Chapter →
+              </a>
+              <a href="#start" className="btn-outline text-center">
+                Start a Chapter →
+              </a>
+            </div>
+            <p className="text-sm text-gray-500">
+              Not sure where to start?{' '}
+              <a
+                href="mailto:contact@lakeforall.org"
+                className="text-sky-blue hover:underline font-medium"
+              >
+                Reach out to us at contact@lakeforall.org
+              </a>{' '}
+              and we&apos;ll help you find your people.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Map */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +91,7 @@ export default function ChaptersPage() {
       </section>
 
       {/* Chapter Directory */}
-      <section className="py-16 bg-gray-50">
+      <section id="find" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="section-title">Chapter Directory</h2>
           <p className="text-gray-500 mb-8">

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import WaveIcon from './WaveIcon';
 
 export default function Footer() {
   return (
@@ -8,16 +7,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <WaveIcon size={28} className="text-sky-blue" />
-              <span className="font-bold text-xl">Lake For All</span>
+            <div className="mb-4 flex items-center gap-3">
+              <img
+                src="/images/logo.png"
+                alt="Lake For All"
+                style={{ height: '40px', width: 'auto' }}
+              />
+              <span className="text-white font-bold text-lg leading-none">Lake For All</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
-              A national grassroots movement advocating for public lake access and the preservation
-              of all watersports on public lakes across the United States.
+              A national grassroots movement protecting public access to America&apos;s lakes —
+              for boaters, fishermen, swimmers, kayakers, paddleboarders, and every American who
+              believes public waters belong to everyone.
             </p>
             <p className="mt-4 text-sky-blue font-semibold text-sm italic">
-              Every Lake. Every Sport. Every American.
+              Every Lake. Every Activity. For All.
             </p>
           </div>
 
@@ -66,6 +70,27 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-6 bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl p-4">
+              <p className="text-white font-semibold text-sm mb-1">Ready to take action?</p>
+              <p className="text-gray-400 text-xs mb-3 leading-snug">
+                Find your local chapter or start one at your lake.
+              </p>
+              <div className="flex flex-col gap-2">
+                <Link
+                  href="/chapters#find"
+                  className="text-center text-xs font-semibold bg-sky-blue text-white px-3 py-1.5 rounded-lg hover:bg-sky-blue-dark transition-colors"
+                >
+                  Find a Chapter
+                </Link>
+                <Link
+                  href="/chapters#start"
+                  className="text-center text-xs font-semibold border border-sky-blue text-sky-blue px-3 py-1.5 rounded-lg hover:bg-sky-blue hover:text-white transition-colors"
+                >
+                  Start a Chapter
+                </Link>
+              </div>
+            </div>
 
             <h3 className="font-semibold text-white mt-6 mb-4 text-sm uppercase tracking-wide">
               Connect

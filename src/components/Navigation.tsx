@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import WaveIcon from './WaveIcon';
 
 const navLinks = [
   { href: '/why-lakes-matter', label: 'Why Lakes Matter' },
+  { href: '/education', label: 'Education' },
   { href: '/chapters', label: 'Chapters' },
   { href: '/news', label: 'News' },
   { href: '/shop', label: 'Shop' },
@@ -23,12 +23,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-white hover:text-sky-blue transition-colors"
-          >
-            <WaveIcon size={28} className="text-sky-blue" />
-            <span className="font-bold text-xl tracking-tight">Lake For All</span>
+          <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <img
+              src="/images/logo.png"
+              alt="Lake For All"
+              style={{ height: '40px', width: 'auto' }}
+            />
+            <span className="flex flex-col leading-none">
+              <span className="text-white font-black uppercase tracking-widest" style={{ fontSize: '9px' }}>Lake</span>
+              <span className="text-white font-black uppercase tracking-widest text-sm">For All</span>
+            </span>
           </Link>
 
           {/* Desktop nav */}
@@ -47,7 +51,7 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href="/chapters"
+              href="/chapters#join"
               className="ml-3 bg-sky-blue text-white font-semibold px-4 py-2 rounded-lg hover:bg-sky-blue-dark transition-colors text-sm"
             >
               Join the Movement
@@ -92,7 +96,7 @@ export default function Navigation() {
               </Link>
             ))}
             <Link
-              href="/chapters"
+              href="/chapters#join"
               onClick={() => setMenuOpen(false)}
               className="block mt-2 bg-sky-blue text-white font-semibold px-4 py-2 rounded-lg text-center text-sm"
             >

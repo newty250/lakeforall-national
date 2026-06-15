@@ -22,6 +22,16 @@ export interface Chapter {
   };
   memberCount?: number;
   founded?: string;
+  founding?: boolean;
+  foundingNote?: string;
+}
+
+export interface MaterialsRequest {
+  name: string;
+  email: string;
+  chapterLake: string;
+  materials: 'wave-cards' | 'signs' | 'both';
+  message: string;
 }
 
 export interface ChapterApplication {
