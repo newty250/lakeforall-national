@@ -163,12 +163,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* WAVE Program Card */}
             <div className="bg-navy rounded-2xl p-8 text-white flex flex-col">
-              <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center mb-5">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 20 Q8 12 14 20 Q20 28 26 20 Q32 12 38 20" stroke="#4A9FD4" strokeWidth="3" strokeLinecap="round" fill="none"/>
-                  <path d="M2 28 Q8 20 14 28 Q20 36 26 28 Q32 20 38 28" stroke="#4A9FD4" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.6"/>
-                </svg>
-              </div>
+              <div className="text-4xl mb-4">🌊</div>
               <h3 className="text-2xl font-extrabold text-white mb-3">The WAVE Program</h3>
               <p className="text-gray-300 leading-relaxed mb-5">
                 WAVE — Watercraft, Appreciate, Value, Enjoy — is a four-principle guide for sharing
@@ -199,12 +194,7 @@ export default function HomePage() {
 
             {/* Lake Responsibly Card */}
             <div className="bg-navy rounded-2xl p-8 text-white flex flex-col">
-              <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center mb-5">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 3 L35 10 L35 22 C35 30 28 36 20 38 C12 36 5 30 5 22 L5 10 Z" stroke="#4A9FD4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-                  <path d="M13 20 L18 25 L27 16" stroke="#4A9FD4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <div className="text-4xl mb-4">🛡️</div>
               <h3 className="text-2xl font-extrabold text-white mb-3">Lake Responsibly</h3>
               <p className="text-gray-300 leading-relaxed mb-5">
                 Lake For All designs and installs educational signage at public marinas — informing

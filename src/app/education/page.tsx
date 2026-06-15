@@ -131,12 +131,7 @@ export default function EducationPage() {
       <section className="py-16 bg-navy text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-12 bg-sky-blue bg-opacity-20 rounded-xl flex items-center justify-center">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 20 Q8 12 14 20 Q20 28 26 20 Q32 12 38 20" stroke="#4A9FD4" strokeWidth="3" strokeLinecap="round" fill="none"/>
-                <path d="M2 28 Q8 20 14 28 Q20 36 26 28 Q32 20 38 28" stroke="#4A9FD4" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.6"/>
-              </svg>
-            </div>
+            <div className="text-4xl mb-4">🌊</div>
             <span className="text-sky-blue font-semibold uppercase tracking-wide text-sm">
               Program 1
             </span>
@@ -206,12 +201,7 @@ export default function EducationPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 3 L35 10 L35 22 C35 30 28 36 20 38 C12 36 5 30 5 22 L5 10 Z" stroke="#4A9FD4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-                <path d="M13 20 L18 25 L27 16" stroke="#4A9FD4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
+            <div className="text-4xl mb-4">🛡️</div>
             <span className="text-sky-blue font-semibold uppercase tracking-wide text-sm">
               Program 2
             </span>
