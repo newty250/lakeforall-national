@@ -23,20 +23,40 @@ const STATS = [
 export default function HomePage() {
   const previewNews = MOCK_NEWS.slice(0, 3);
   const previewChapters = CHAPTERS.slice(0, 3);
+  const hasHeroVideo = fs.existsSync(path.join(process.cwd(), 'public', 'videos', 'hero.mp4'));
   const hasHeroImage = fs.existsSync(path.join(process.cwd(), 'public', 'images', 'hero.jpg'));
 
   return (
     <>
       {/* Hero */}
       <section className="relative overflow-hidden wave-bg text-white">
+        {/* Image background: all devices when no video; mobile-only when video exists */}
         {hasHeroImage && (
-          <>
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-              style={{ backgroundImage: "url('/images/hero.jpg')" }}
-            />
-            <div className="absolute inset-0 z-0" style={{ background: 'rgba(0,20,50,0.6)' }} />
-          </>
+          <div
+            className={`absolute inset-0 bg-cover bg-center bg-no-repeat z-0${hasHeroVideo ? ' md:hidden' : ''}`}
+            style={{ backgroundImage: "url('/images/hero.jpg')" }}
+          />
+        )}
+
+        {/* Video background: desktop only (mobile uses image or gradient for performance) */}
+        {hasHeroVideo && (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
+          >
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
+        )}
+
+        {/* Dark overlay over whichever media is visible */}
+        {(hasHeroVideo || hasHeroImage) && (
+          <div
+            className={`absolute inset-0 z-[1]${hasHeroVideo && !hasHeroImage ? ' hidden md:block' : ''}`}
+            style={{ background: 'rgba(0,20,50,0.6)' }}
+          />
         )}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
           <div className="max-w-3xl">
