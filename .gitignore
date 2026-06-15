@@ -24,6 +24,14 @@ yarn-error.log*
 .env
 .env*.local
 
+# Credential and secret files — never commit these
+*API*.txt
+*api*.txt
+*secret*.txt
+*key*.txt
+*token*.txt
+*credential*.txt
+
 # Vercel
 .vercel
 
