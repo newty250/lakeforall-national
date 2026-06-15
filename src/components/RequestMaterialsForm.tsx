@@ -28,7 +28,7 @@ export default function RequestMaterialsForm() {
     setError('');
 
     try {
-      const res = await fetch('/api/request-materials', {
+      const res = await fetch('/api/contact/materials', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -42,7 +42,7 @@ export default function RequestMaterialsForm() {
       setStatus('success');
       setForm(initialState);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+      setError(err instanceof Error ? err.message : 'Something went wrong sending your request. Please email us directly at info@lakeforall.org and we\'ll get back to you shortly.');
       setStatus('error');
     }
   };
@@ -57,8 +57,8 @@ export default function RequestMaterialsForm() {
         </div>
         <h3 className="text-xl font-bold text-navy mb-2">Request Received!</h3>
         <p className="text-gray-600">
-          Thank you. Our team will follow up within 3–5 business days with your print-ready
-          materials and any additional information you need.
+          Thank you. Our team will follow up within 5 business days with your print-ready materials.
+          Check your inbox for a confirmation email.
         </p>
         <button
           onClick={() => setStatus('idle')}

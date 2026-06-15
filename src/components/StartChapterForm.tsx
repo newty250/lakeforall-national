@@ -28,7 +28,7 @@ export default function StartChapterForm() {
     setError('');
 
     try {
-      const res = await fetch('/api/chapters', {
+      const res = await fetch('/api/contact/chapter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -42,7 +42,7 @@ export default function StartChapterForm() {
       setStatus('success');
       setForm(initialState);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+      setError(err instanceof Error ? err.message : 'Something went wrong sending your request. Please email us directly at info@lakeforall.org and we\'ll get back to you shortly.');
       setStatus('error');
     }
   };
@@ -58,7 +58,7 @@ export default function StartChapterForm() {
         <h3 className="text-xl font-bold text-navy mb-2">Application Received!</h3>
         <p className="text-gray-600">
           Thank you for your interest in starting a Lake For All chapter. We&apos;ll be in touch
-          within 3–5 business days to discuss next steps.
+          within 5 business days to discuss next steps. Check your inbox for a confirmation email.
         </p>
         <button
           onClick={() => setStatus('idle')}
