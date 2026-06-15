@@ -303,7 +303,10 @@ export default function EducationPage() {
       {/* CTA */}
       <section className="wave-bg py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <WaveIcon size={48} className="text-sky-blue mx-auto mb-6" />
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <img src="/images/logo.png" alt="Lake For All" style={{ height: '50px', width: 'auto' }} />
+            <span className="text-white font-bold text-xl">Lake For All</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Bring These Programs to Your Lake
           </h2>
