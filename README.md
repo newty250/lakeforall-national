@@ -6,7 +6,7 @@ National website for the **Lake For All** grassroots movement advocating for pub
 
 - **Next.js 14** (App Router, TypeScript)
 - **Tailwind CSS** — navy `#1B3A6B` / sky blue `#4A9FD4` visual identity
-- **Anthropic API** (`claude-sonnet-4-6` + web search) — AI news curation
+- **Anthropic API** (`claude-haiku-4-5` + web search) — AI news curation
 - **Vercel KV** — persists AI-curated news between cron runs
 - **react-simple-maps** — interactive US chapter map
 - **Resend** — transactional email for chapter applications
@@ -82,7 +82,7 @@ The `vercel.json` configures a cron job that hits `/api/cron/news` every day at 
 }
 ```
 
-The endpoint uses `claude-sonnet-4-6` with the web search tool to find recent lake access news and stores results in Vercel KV. To test manually:
+The endpoint uses `claude-haiku-4-5` with the web search tool to find recent lake access news and stores results in Vercel KV. To test manually:
 
 ```bash
 curl -H "Authorization: Bearer YOUR_CRON_SECRET" https://your-site.vercel.app/api/cron/news

@@ -64,7 +64,7 @@ export default async function NewsPage() {
           <p className="text-sm text-gray-600 flex items-center gap-2">
             <span className="inline-block w-2 h-2 bg-sky-blue rounded-full flex-shrink-0" />
             This feed is automatically updated daily by an AI agent using{' '}
-            <strong className="text-navy">claude-sonnet-4-6</strong> with web search — curating the
+            <strong className="text-navy">claude-haiku-4-5</strong> with web search — curating the
             most relevant lake access news from across the country.
           </p>
         </div>
