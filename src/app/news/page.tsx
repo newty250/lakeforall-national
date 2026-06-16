@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'AI-curated national news on public lake access rights, water activity regulations, privatization of public waters, and lake access legislation across the US.',
 };
 
-export const revalidate = 3600;
+export const revalidate = 604800;
 
 const CATEGORIES = [
   { value: 'all', label: 'All' },
