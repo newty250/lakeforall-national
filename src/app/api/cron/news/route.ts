@@ -3,6 +3,10 @@ import { fetchNewsFromAI } from '@/lib/anthropic';
 import { storeNews } from '@/lib/news';
 
 export async function GET(request: NextRequest) {
+  if (process.env.NODE_ENV === 'development') {
+    return NextResponse.json({ skipped: true, reason: 'Development environment — no API calls' });
+  }
+
   const authHeader = request.headers.get('authorization');
   const cronSecret = process.env.CRON_SECRET;
 
