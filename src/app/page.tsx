@@ -50,11 +50,11 @@ export default function HomePage() {
           </video>
         )}
 
-        {/* Dark overlay over whichever media is visible */}
+        {/* Gradient overlay over whichever media is visible, for text readability */}
         {(hasHeroVideo || hasHeroImage) && (
           <div
-            className={`absolute inset-0 z-[1]${hasHeroVideo && !hasHeroImage ? ' hidden md:block' : ''}`}
-            style={{ background: 'rgba(0,20,50,0.6)' }}
+            className={`absolute inset-0 z-[1] wave-bg${hasHeroVideo && !hasHeroImage ? ' hidden md:block' : ''}`}
+            style={{ opacity: 0.7 }}
           />
         )}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
