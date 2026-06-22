@@ -51,15 +51,25 @@ export default function ChapterCard({ chapter }: ChapterCardProps) {
             </p>
           )}
 
-          <div className="mt-4 pt-4 border-t border-gray-100">
+          <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
             <a
               href={chapter.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary text-sm w-full text-center"
+              className="btn-outline text-sm w-full text-center"
             >
-              Visit {chapter.name} →
+              Visit Chapter Site →
             </a>
+            {chapter.shopUrl && (
+              <a
+                href={chapter.shopUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-sm w-full text-center"
+              >
+                Shop Lake Anna →
+              </a>
+            )}
           </div>
         </div>
       </div>

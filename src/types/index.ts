@@ -24,6 +24,7 @@ export interface Chapter {
   founded?: string;
   founding?: boolean;
   foundingNote?: string;
+  shopUrl?: string;
 }
 
 export interface MaterialsRequest {

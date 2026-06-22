@@ -53,7 +53,12 @@ const PRODUCTS = [
 ];
 
 const CHAPTER_PRODUCTS = [
-  { name: 'Lake Anna 4 All', lake: 'Lake Anna, VA', badge: 'Coming Soon' },
+  {
+    name: 'Lake Anna 4 All',
+    lake: 'Lake Anna, VA',
+    description: 'The founding chapter\'s merchandise line — supporting lake access advocacy at Virginia\'s second-largest recreational lake.',
+    shopUrl: 'https://lakeanna4all.vercel.app/shop',
+  },
 ];
 
 export default function ShopPage() {
@@ -147,15 +152,21 @@ export default function ShopPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CHAPTER_PRODUCTS.map((cp) => (
-              <div key={cp.name} className="card p-6 text-center">
+              <div key={cp.name} className="card p-6 text-center flex flex-col">
                 <div className="w-16 h-16 wave-bg rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🏔️</span>
                 </div>
                 <h3 className="font-bold text-navy mb-1">{cp.name}</h3>
-                <p className="text-sm text-gray-500 mb-4">{cp.lake}</p>
-                <span className="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">
-                  {cp.badge}
-                </span>
+                <p className="text-sm text-gray-500 mb-3">{cp.lake}</p>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4 flex-1">{cp.description}</p>
+                <a
+                  href={cp.shopUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-sm w-full text-center"
+                >
+                  Shop Lake Anna Collection →
+                </a>
               </div>
             ))}
             <div className="card p-6 text-center border-2 border-dashed border-gray-200">

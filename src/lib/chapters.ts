@@ -12,6 +12,7 @@ export const CHAPTERS: Chapter[] = [
     foundingNote:
       "The movement started here. Lake Anna, Virginia — where Lake For All was born in response to the privatization of public waters on Virginia's second-largest recreational lake.",
     url: 'https://lakeanna4all.vercel.app',
+    shopUrl: 'https://lakeanna4all.vercel.app/shop',
     coordinates: { lat: 38.0293, lng: -77.8133 },
     memberCount: 1200,
     founded: '2024',
